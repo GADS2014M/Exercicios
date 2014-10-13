@@ -1,8 +1,7 @@
   [ --- Exemplos de estruturas de repetição --- ]
   
 ---------------------------------------
-
-1) Switch
+1) Se, então
 
 int month = 8;
 	if (month == 1) {
