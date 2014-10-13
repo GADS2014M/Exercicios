@@ -1,10 +1,18 @@
+// Exemplo de uma má estruturação
 
-public class OlaMundo {
+public class Exercicio1 {
 
 	public static void main(String[] args) {
+
+		int idade = 1;
+
+		if (idade >= 0)
+			
+			if (idade == 0)
+				System.out.println("Não Pode");
+			else System.out.println("Pode");
 		
-		// Olá mundo
-		System.out.println("Olá Mundo!");
+		System.out.println("Sempre Pode");
 
 	}
 
