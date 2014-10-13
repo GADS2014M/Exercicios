@@ -11,6 +11,15 @@ public class HelloWorld
         int number2;
         int sum;
         
-        System.out.println(sum);
+        System.out.print("Digite o primeiro numero: ");
+        number1 = input.nextInt();
+        
+        System.out.print("Digite o segundo numero: ");
+        number2 = input.nextInt();
+        
+        sum = number1 + number2;
+        
+        System.out.print("A soma dos numeros e: ");
+        System.out.print(sum);
     }
 }
