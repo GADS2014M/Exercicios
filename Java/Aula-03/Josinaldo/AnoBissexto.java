@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 // Magic bitch!
 
-public class Exercicio2 {
+public class AnoBissexto {
 
 	public static void main(String[] args) {
 		
