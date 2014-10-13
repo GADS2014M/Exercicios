@@ -1,4 +1,4 @@
-  [ --- Estruturas de repetição --- ]
+  [ --- Exemplos de estruturas de repetição --- ]
   
 ---------------------------------------
 
