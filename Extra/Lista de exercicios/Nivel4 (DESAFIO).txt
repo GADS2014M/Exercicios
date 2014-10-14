@@ -1,0 +1,11 @@
+1. Dizemos que um número natural é triangular se ele é produto de três números naturais 
+consecutivos. Exemplo: 120 é triangular, pois 4.5.6 = 120. Dado um inteiro não-negativo n, 
+verificar se n é triangular.
+2. Indique como um troco deve ser dado utilizando-se um número mínimo de notas. Seu 
+algoritmo deve ler o valor da conta a ser paga e o valor do pagamento efetuado desprezando 
+os centavos. Suponha que as notas para troco sejam as de 50, 20, 10, 5, 2 e 1 reais, e que 
+nenhuma delas esteja em falta no caixa.
+3. Verifique se um inteiro positivo n é primo.
+4. Dado um número inteiro positivo, determine a sua decomposição em fatores primos 
+calculando também a multiplicidade de cada fator.
+5. Faça um programa que peça um inteiro positivo e o mostre invertido. Ex.: 1234 gera 4321
