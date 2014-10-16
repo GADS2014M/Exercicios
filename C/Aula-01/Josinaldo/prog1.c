@@ -1,5 +1,4 @@
-/*
-
+/* 
 - C não tem "nada", so adicionar as bibliotecas para determinada função
 - Tipos de variáveis que vamos usar nesse curso: int(inteiro), float(real), char(caracter)
 - \n = Quebra a linha
@@ -13,8 +12,7 @@ Como funciona?
     -   <- compilador GCC (compila)
     -   prog1.o <- Arquivo objeto
     -   <- luker
-    -   prog1.exe
-
+    -   prog1.exe 
 */
 
 //Declara as bibliotecas
