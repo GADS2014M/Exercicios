@@ -6,6 +6,15 @@
 - .1, 3.14 = 3.1, 3.15 = 3.2
 - system("PAUSE"); - para pausar(caso execute o prog1.exe).
 
+Como funciona?
+
+    -   prog1.c <- Arquivo fonte
+    -   <- pré compilador (Adiciona biblioteca, define as constantes e etc..)
+    -   <- compilador GCC (compila)
+    -   prog1.o <- Arquivo objeto
+    -   <- luker
+    -   prog1.exe
+
 */
 
 //Declara as bibliotecas
@@ -51,14 +60,3 @@ main(){
     // %p = ponteiros
 
 }
-
-/* Como funciona?
-
-    -   prog1.c <- Arquivo fonte
-    -   <- pré compilador (Adiciona biblioteca, define as constantes e etc..)
-    -   <- compilador GCC (compila)
-    -   prog1.o <- Arquivo objeto
-    -   <- luker
-    -   prog1.exe
-
-*/
