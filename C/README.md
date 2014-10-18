@@ -1,5 +1,5 @@
 
-Bem vindos ao nosso repositorio de Exercicios
+Exercicios de C
 ========================================================
 
 Aqui cada pasta representa uma aula, è necessario Seguir o padrão Aula-01 , Aula-02 ,Aula-03, Aula-XY....
