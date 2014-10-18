@@ -2,7 +2,7 @@
 Exercicios de C
 ========================================================
 
-Aqui cada pasta representa uma aula, è necessario Seguir o padrão Aula-01 , Aula-02 ,Aula-03, Aula-XY....
+Aqui cada pasta representa uma aula, è necessario Seguir o padrão Aula1 , Aula2 ,Aula3, AulaY....
 
 
 Caso exista algum exercicio em especial (um exercicio que não envolva exatament uma aula) 
