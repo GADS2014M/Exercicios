@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class exercicio2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String[][] jogadores; 
+		jogadores = new String[4][2]; 
+		
+		
+		jogadores[0][0] = "Joao";
+		jogadores[0][1] = "Jose";
+		jogadores[1][0] = "Joaquim";
+		jogadores[1][1] = "josefino";
+		
+					
+			for(int i = 0; i < jogadores.length; i++) {
+				for(int j = 0; j < jogadores[i].length; j++) {
+					if (j == 1) {
+						System.out.println(jogadores[0][0] + " X " + jogadores[0][1]);
+					}
+				}
+			}
+	}
+}
