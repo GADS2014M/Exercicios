@@ -1,0 +1,29 @@
+#include <stdio.h>
+main(){
+    //somar os conteudos de duas matrizes 2x2 dentro de uma terceira
+    int m1[2][2],m2[2][2],total[2][2];
+    int i,j;
+
+    printf("insira numeros nos paranaue");
+
+    for (i=0;i<2;i++)
+    {
+        for (j=0;j<2;j++)
+        {
+            scanf("%d ", &m1[i][j]);
+            scanf("%d ", &m2[i][j]);
+            total[i][j]= m2[i][j] + m1[i][j];
+        }
+    }
+
+for (i=0;i<2;i++)
+    {
+        for (j=0;j<2;j++)
+        {
+             printf("%d ", total[i][j]);
+
+        }
+                printf("\n");
+
+    }
+}
