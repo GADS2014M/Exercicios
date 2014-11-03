@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+
+
+main(){
+    int cabra[100][120];
+    int i,j;
+
+
+    for (i=0;i<100;i++)
+        {
+            for (j=0;j<120;j++)
+            {
+                cabra[i][j] = (i*10) + j;
+                printf("%3d ",cabra[i][j]);
+            }
+            printf("\n");
+        }
+}
