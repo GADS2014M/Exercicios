@@ -7,16 +7,15 @@ main(){
        para um outro vetor do mesmo tipo e tamanho, e mostre o conteúdo do novo vetor na ordem inversa.
     */
 
-    int vetor[8] = {10, 20, 30, 40, 50, 60, 70, 80},
-        j = 7,
-        i = 0;
+    int vetor1[8] = {10, 20, 30, 40, 50, 60, 70, 80},
+        vetor2[8],
+        i;
 
-    printf("|  Vetor  |  Inverso  |\n\n");
-
-    while(i <= 7){
-        printf("    %d         %d\n", vetor[j], vetor[i]);
-        i++;
-        j--;
+    for(i=0;i<=7;i++){
+        vetor2[i] = vetor1[i];
+    }
+    for(i=7;i>=0;i--){
+        printf("Novo vetor: %d\n", vetor2[i]);
     }
 
 }
