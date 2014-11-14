@@ -21,5 +21,3 @@ main() {
 	else
 		printf("Numero nao foi achado");
 }
-
-
