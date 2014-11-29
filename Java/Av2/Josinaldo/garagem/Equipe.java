@@ -38,12 +38,9 @@ public class Equipe {
 	
 	// Troca carros entre os pilotos
 	public void trocaCarro(int piloto1, int piloto2){
-		int p1 = this.carroDoPiloto[piloto1];
-		int p2 = this.carroDoPiloto[piloto2];
-		// faz a troca
-		int auxiliar = p1;
-		p1 = p2;
-		p2 = auxiliar;
+		int auxiliar = this.carroDoPiloto[piloto1];
+		this.carroDoPiloto[piloto1] = this.carroDoPiloto[piloto2];
+		this.carroDoPiloto[piloto2] = auxiliar;
 	}
 	
 	// Adiciona vitoria ao piloto
@@ -69,10 +66,10 @@ public class Equipe {
 		System.out.println("O piloto com mais vitórias é: " + listaPiloto[idPiloto].getNome() + " com " + listaPiloto[idPiloto].getNumeroTitulos() + " vitórias");
 		// Exibe Carro deste piloto
 		System.out.println("--- Atributos do carro ---");
-		System.out.println("Marca do motor: "		+ listaCarro[idPiloto].getMarcaMotor());
-		System.out.println("Chassi: "				+ listaCarro[idPiloto].getChassi());
-		System.out.println("Marca do pneu: "		+ listaCarro[idPiloto].getMarcaPneu());
-		System.out.println("Marca do combustivel: "	+ listaCarro[idPiloto].getMarcaCombustivel());
+		System.out.println("Marca do motor: "		+ listaCarro[carroDoPiloto[idPiloto]].getMarcaMotor());
+		System.out.println("Chassi: "				+ listaCarro[carroDoPiloto[idPiloto]].getChassi());
+		System.out.println("Marca do pneu: "		+ listaCarro[carroDoPiloto[idPiloto]].getMarcaPneu());
+		System.out.println("Marca do combustivel: "	+ listaCarro[carroDoPiloto[idPiloto]].getMarcaCombustivel());
 		return idPiloto;
 	}
 	
