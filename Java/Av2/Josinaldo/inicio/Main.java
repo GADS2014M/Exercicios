@@ -40,7 +40,6 @@ public class Main {
 		equipe.cadastraCarroEquipe(carro[1], 1);
 		
 		
-		/* >>>>>>>>>>>>>>>>>> ERRO AQUI CONCERTAR!!! <<<<<<<<<<<<<<<<< */
 		// Vincula um Carro a um Piloto pelo ID
 		//				   [piloto | carro]
 		equipe.pilotoRecebeCarro(0 , 0);
@@ -63,7 +62,7 @@ public class Main {
 		equipe.adicionaVitoria(maisVitorioso);
 		
 		// Trocar os carros entre os pilotos
-		equipe.trocaCarro(1, 0);
+		equipe.trocaCarro(0, 1);
 		
 		System.out.println();
 		
