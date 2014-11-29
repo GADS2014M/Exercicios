@@ -1,7 +1,7 @@
 package com.formula1.garagem;
 
-import com.formula1.corrida.Carro;
-import com.formula1.corrida.Piloto;
+import com.formula1.garagem.corrida.Carro;
+import com.formula1.garagem.corrida.Piloto;
 
 public class Equipe {
 	// Private para proteger e ser acessado somente por esta classe
@@ -13,6 +13,14 @@ public class Equipe {
 	private int	   carroDoPiloto[] = new int[2];
 	
 	// Public para ser acessador de qualquer lugar do projeto
+	public Equipe cadastraEquipe(String nome, String dataFundacao, String pais){
+		Equipe equipe = new Equipe();
+		equipe.setNome(nome);
+		equipe.setDataFundacao(dataFundacao);
+		equipe.setPais(pais);
+		return equipe;
+	}
+	
 	// Cadastra piloto na equipe
 	public Piloto cadastraPilotoEquipe(Piloto piloto, int indice){
 		return this.listaPiloto[indice] = piloto;
@@ -23,7 +31,7 @@ public class Equipe {
 		return this.listaCarro[indice] = carro;
 	}
 	
-	// Designa um Carro a um Piloto.
+	// Designa um Carro a um Piloto
 	public void pilotoRecebeCarro(int idPiloto, int idCarro){
 		this.carroDoPiloto[idPiloto] = idCarro;
 	}
@@ -46,25 +54,26 @@ public class Equipe {
 	}
 	
 	// Imprime piloto com mais vitórias e seu carro
-	public void imprimeMaisVitorioso(){
+	public int imprimeMaisVitorioso(){
 		// Podeira ser um Integer.MIN_VALUE, mas optei pela primeira variável
-		int maior = listaPiloto[0].getId();
+		int maior = listaPiloto[0].getNumeroTitulos();
 		int idPiloto = 0;
-		for(int i=0; i <= listaPiloto[i].getId();){
-			if(maior < listaPiloto[i].getId()){
-				maior = listaPiloto[i].getId();
+		for(int i=0; i < listaPiloto.length ;i++){
+			if(listaPiloto[i].getNumeroTitulos() > maior){
+				maior = listaPiloto[i].getNumeroTitulos();
 				idPiloto = i;
 			}
 		}
 		
 		// Exibe Piloto com maior número de vitórias
-		System.out.println("O piloto com mais vitórias é: " + idPiloto);
+		System.out.println("O piloto com mais vitórias é: " + listaPiloto[idPiloto].getNome() + " com " + listaPiloto[idPiloto].getNumeroTitulos() + " vitórias");
 		// Exibe Carro deste piloto
 		System.out.println("--- Atributos do carro ---");
 		System.out.println("Marca do motor: "		+ listaCarro[idPiloto].getMarcaMotor());
 		System.out.println("Chassi: "				+ listaCarro[idPiloto].getChassi());
 		System.out.println("Marca do pneu: "		+ listaCarro[idPiloto].getMarcaPneu());
 		System.out.println("Marca do combustivel: "	+ listaCarro[idPiloto].getMarcaCombustivel());
+		return idPiloto;
 	}
 	
 	/* Get's e Set's */
