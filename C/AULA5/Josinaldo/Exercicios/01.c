@@ -1,5 +1,9 @@
 #include <stdio.h>
 
+    /*
+        1.	Faça um programa que leia uma frase do teclado e mostre-a invertida, ou seja, do final para o começo.
+    */
+
 // Tamanho da string
 const t = 100;
 
