@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
     /*
         1. Faça um programa que leia uma frase do teclado e mostre-a invertida, ou seja, do final para o começo.
