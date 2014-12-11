@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+const int tam = 2;
+
 main(){
 
     /*
@@ -7,11 +9,9 @@ main(){
             que seja a soma dos elementos na mesma posição das duas matrizes lidas.
     */
 
-    const int tam = 2;
-
     int mat1[2][2] = {{10,20},{30,40}},
         mat2[2][2] = {{50,60},{70,80}},
-        mat3[2][2];
+        mat3[tam][tam];
     int i, j;
 
     // Exibe matriz 1
