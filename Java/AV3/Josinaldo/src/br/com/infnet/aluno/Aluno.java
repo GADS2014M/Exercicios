@@ -8,7 +8,7 @@ public class Aluno {
 	private String 	 	 nome;
 	private int 	 	 idade;
 	private String	 	 curso;
-	private Disciplina[] disciplinas = new Disciplina[5];
+	private Disciplina[]	 disciplinas = new Disciplina[5];
 	
 	// Cria aluno
 	public static Aluno criaAluno(int matricula, String nome, int idade, String curso, Disciplina dis1, Disciplina dis2, Disciplina dis3, Disciplina dis4, Disciplina dis5){
