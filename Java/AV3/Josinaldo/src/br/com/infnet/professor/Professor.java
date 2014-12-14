@@ -6,7 +6,7 @@ public class Professor {
 	// Private para proteger e fica restrito a está classe
 	private String	nome;
 	private String	especialidade;
-	private int		maldade;
+	private int	maldade;
 	
 	// Cria professor
 	public static Professor criaProfessor(String nome, String especialidade, int maldade){
