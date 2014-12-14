@@ -13,9 +13,9 @@ public class Professor {
 		// Istancia a classe
 		Professor p = new Professor();
 		// Salva
-		p.nome 				= nome;
-		p.especialidade 	= especialidade;
-		p.maldade 			= maldade;
+		p.setNome(nome);
+		p.setEspecialidade(especialidade);
+		p.setMaldade(maldade);
 		return p;
 	}
 	
@@ -62,5 +62,5 @@ public class Professor {
 	public int setMaldade(int maldade) {
 		return this.maldade = maldade;
 	}
-
+	
 }
